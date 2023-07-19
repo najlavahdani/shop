@@ -93,7 +93,7 @@ document.querySelector('#close-categories').onclick=() =>{
 
 //brands swiper section starts
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 25,
     grabCursor:true,
     loop: true,
