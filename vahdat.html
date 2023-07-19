@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>vahdat home appliances</title>
 
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+    
+
     <!--font awesome cdn link-->
     <script src="https://kit.fontawesome.com/76c05b648a.js" crossorigin="anonymous"></script>
 
@@ -20,10 +25,10 @@
         <!-- header-1 section starts  -->
         <div class="header-1">
             <div class="icons">
-                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                 <a href=""><i class="fa-brands fa-telegram"></i></a>
-                <a href=""><i class="fa-solid fa-square-phone-flip"></i></a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+                <!-- <a href=""><i class="fa-brands fa-square-instagram"></i></a> -->
             </div>
 
             <div class="content">
@@ -84,17 +89,53 @@
             <div>
                 <nav class="navbar">
                     <a href="#home">خانه</a>
-                    <a href="#about-us">درباره ما</a>
+                    <!-- <a href="#about-us">درباره ما</a> -->
                     <a href="#tracking">پیگیری سفارش</a>
                     <a href="#contact">ارتباط با ما</a>
+                    <a href="#brands">برندها</a>
                 </nav>
             </div>
 
-            <div class="categories-bar">
-                <i class="fa-solid fa-bars"></i>
-                <a href="#categories" id="">دسته بندی کالا ها</a>
+            <div class="dropdown">
+                <div id="dropdown-list-btn" class="categories-bar" >
+                    <i class="fa-solid fa-bars" ></i>
+                    <span>دسته بندی کالاها</span>
+                </div>
             </div>
         </div>
+
+        <!-- dropdown list starts -->
+        <div class="dropdown-list">
+            <div class="dropdown-list-content">
+                <div class="dropdown-list-header">
+                    <button id="close-categories">x</button>
+                </div>
+
+                <div class="dropdown-list-items scrollbar">
+                    <a href="#">جاروبرقی</a>
+                    <a href="#">مخلوط کن</a>
+                    <a href="#">کتری برقی</a>
+                    <a href="#">پنکه</a>
+                    <a href="#">گوشتکوب</a>
+                    <a href="#">اتو</a>
+                    <a href="#">کتری برقی</a>
+                    <a href="#">پنکه</a>
+                    <a href="#">گوشتکوب</a>
+                    <a href="#">اتو</a>
+                    <a href="#">جاروبرقی</a>
+                    <a href="#">مخلوط کن</a>
+                </div>
+
+                <div class="dropdown-list-footer">
+                    <a href="#categories">مشاهده همه</a>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- dropdown list ends -->
+        
         <!-- header-3 section ends -->
     </section>
     <!-- header section ends -->
@@ -184,7 +225,7 @@
     <section class="bot-nav">
         <nav class="bottom-navbar">
             <a href="#home"><span>خانه</span></a>
-            <a href="#about-us"><span>درباره ما</span></a>
+            <!-- <a href="#about-us"><span>درباره ما</span></a> -->
             <a href="#tracking"><span>پیگیری سفارش</span></a>
             <a href="#contact"><span>ارتباط با ما</span></a>
         </nav>
@@ -243,10 +284,6 @@
 
     </section>
     <!-- icons section ends -->
-
-
-    <!-- about us section starts -->
-    <!-- about us section ends -->
 
     <!-- categories section starts -->
     <section id="categories" class="categories">
@@ -338,17 +375,259 @@
     </section>
     <!-- categories section ends -->
 
+    <!-- brands section starts -->
+    <section id="brands" class="brands">
+        <br>
+        <div class="heading">
+            <h2><span>برند های معروف</span></h2>
+        </div>
+
+        <div class="cus-swiper">
+            <div class="slide-container swiper ">
+                <div class="slide-content mySwiper">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="image/Geepas_logo.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">GEEPS / جیپاس</h2>
+                                <p class="discription">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navbtn"></div>
+                <div class="swiper-button-prev swiper-navbtn"></div>
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- brands section ends -->
+
     <!-- Order tracking section starts -->
-    <section id="tracking">
+    <section id="tracking" class="tracking">
         <form action="">
             <h3>برای پیگیری سفارش لطفا مشخصات خواسته شده را وارد کنید</h3>
-            <span>شماره تماس:</span>
-            <input type="text" placeholder="0917...">
-            <span>شماره پیگیری مرسوله:</span>
-            <input type="text" placeholder="33236...">
+            <div class="box">
+                <span>شماره تماس:</span>
+                <input type="text" placeholder="0917..." class="input-box">
+            </div>
+
+            <div class="box">
+                <span>شماره پیگیری مرسوله:</span>
+                <input type="text" placeholder="33236..." class="input-box">
+            </div>
+
+            <input type="submit" class="btn" value="پیگیری">
         </form>
     </section>
     <!-- Order tracking section ends -->
+
+    <!-- contact us section starts  -->
+    <section id="contact">
+        <div class="contact">
+            <h2>از طریق یکی از راه های ارتباطی زیر با ما در ارتباط باشید</h2>
+            <p>برای دریافت هرگونه کمک با ما در ارتباط باشید</p>
+            <div class="contact-ways">
+                <i class="fa-solid fa-phone"><h6>شماره تماس و پیام
+                    <br><span>09177625465</span>
+                </h6></i>
+                <i class="fa-solid fa-envelope"><h6>آدرس ایمیل
+                    <br><span>aliwahdani876@gmail.com</span>
+                </h6></i>
+                <i class="fa-brands fa-whatsapp"><h6>شماره واتس اپ
+                    <br><span>09174570567</span>                
+                </h6></i>
+                <i class="fa-brands fa-telegram"><h6>شماره تلگرام
+                    <br><span>09177625465</span>
+                </h6></i>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="identify">
+                <h2>فروشگاه لوازم خانگی وحدت</h2>
+                <p>استان هرمزگان، شهرستان بندرلنگه، شناس، روبه روی دبیرستان معراج</p>
+            </div>
+
+            <div class="content">
+                <a href="#"><img src="image/payping.png" alt=""></a>
+                <a href="#"><img src="image/payping.png" alt=""></a>
+                <a href="#"><img src="image/payping.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+
+
+
+
+
+
 
 
     <!-- swiper js cdn link -->

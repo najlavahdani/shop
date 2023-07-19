@@ -41,17 +41,71 @@ document.querySelector('#close-cart').onclick =() =>{
 //cart section ends
 
 
-//header-3 section starts
+//header-3 and dropdown list on scroll section starts
 window.onscroll = () => {
     if(window.scrollY > 80){
         document.querySelector('.header .header-3').classList.add('active');
+
+
+        dropdown.classList.remove('active')
+        
+        document.querySelector('#dropdown-list-btn').onclick =() =>{
+            dropdown.classList.toggle('active-2')
+        }
+
+        document.querySelector('#close-categories').onclick=() =>{
+            dropdown.classList.remove('active-2')
+        }
     }
     else{
         document.querySelector('.header .header-3').classList.remove('active');
+        
+
+        dropdown.classList.remove('active-2')
+
+        document.querySelector('#dropdown-list-btn').onclick =() =>{
+            dropdown.classList.toggle('active')
+        }
+        
+        document.querySelector('#close-categories').onclick=() =>{
+            dropdown.classList.remove('active')
+        }
+        
     }
+
+    
 }
-//header-3 section ends
+//header-3 and dropdown list on scroll section ends
 
-//home swiper section starts
 
-//home swiper section ends
+//dropdown categories list starts
+var dropdown= document.querySelector('.dropdown-list')
+document.querySelector('#dropdown-list-btn').onclick =() =>{
+    dropdown.classList.toggle('active')
+}
+
+document.querySelector('#close-categories').onclick=() =>{
+    dropdown.classList.remove('active')
+}
+
+//dropdown categories list ends
+
+
+//brands swiper section starts
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    grabCursor:true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+//brands swiper section ends
