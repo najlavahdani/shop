@@ -91,8 +91,8 @@ document.querySelector('#close-categories').onclick=() =>{
 //dropdown categories list ends
 
 
-//brands swiper section starts
-var swiper = new Swiper(".mySwiper", {
+//brands and special products swiper section starts
+var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 25,
     grabCursor:true,
@@ -100,23 +100,57 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".mySwiper-next",
+      prevEl: ".mySwiper-prev",
     },
 });
-//brands swiper section ends
+  
+
+var specialSwiper = new Swiper(".special-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 25,
+  grabCursor:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".special-prev",
+    prevEl: ".special-next",
+  },
+});
+
+
+//brands and special products swiper section ends
+
+
 
 //home swiper section starts
 var swiper = new Swiper(".homeswiper", {
     slidesPerView: 1,
-    spaceBetween: 25,
+    spaceBetween: 0,
     grabCursor:true,
     loop: true,
 });
 //home swiper section ends
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const shopBtn = document.querySelector(".animated-shop-btn");

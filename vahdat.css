@@ -1159,6 +1159,7 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .slide-container{
@@ -1267,16 +1268,188 @@ html::-webkit-scrollbar-thumb{
     font-size: 25px;
 }
 
-.swiper-pagination{
-    padding-bottom: 30px;
+
+
+
+
+
+/* special product section starts */
+.special-slide-container{
+    max-width: 140rem;
+    height: 25rem;
+    background: rgb(225, 226, 220);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.special-slide-content{
+    margin: 40px 40px;
+    overflow: hidden;
+}
+
+.special-card{
+    border-radius: 25px;
+    background-color: #efefef;
+    box-shadow: var(--box-shadow);
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.special-card:hover{
+    border: var(--border-hover);
+    transform: scale(0.9);
+}
+
+.special-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.special-card-content{
+    display: flex;
+    justify-content: center;
+    
 }
 
 
+.special-card-image{
+    position: relative;
+    row-gap: 5px;
+}
+
+.special-card-image img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.special-card-footer{
+    direction: ltr;
+    width:15rem;
+}
+
+.special-card-footer .new-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-card-footer .disc-percent{
+    background: rgb(160, 26, 26);
+    border-radius: 45%;
+    color: #fff;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+.special-card-footer .price-after-disc{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.last-price{
+    margin-top: 0.8rem;
+}
+
+.special-card-footer .price-before-disc{
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.empty-card{
+    margin-top: 2rem;
+    background: transparent;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.empty-card .title-text{
+    text-align: center;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.empty-card img{
+    height: 10rem;
+    width: 14rem;
+}
+
+.empty-card a{
+    color: var(--green);
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.empty-card a:hover{
+    transform: scale(1.2);
+    color: #c41515;
+}
+
+.last-card{
+    margin-top: 2rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-card a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-card a:hover{
+    transform: scale(1.2);
+}
+
+.last-card i{
+    padding: 1.5rem;
+    color: var(--black);
+    font-size: 3rem;
+    border: solid 0.5rem var(--black);
+    border-radius: 100%;
+}
+
+.last-card span{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.special-nav-btn{
+    color: var(--black);
+    border: 0.1rem solid var(--black);
+    border-radius: 100%;
+}
+
+.special-nav-btn::before,
+.special-nav-btn::after{
+    font-size: 1.5rem;
+}
+
+.special-nav-btn:hover{
+    color: #eee;
+    background: var(--black);
+}
 
 /* footer section starts */
 .footer{
     border-top: 1rem solid var(--dark-color);
     padding: 2rem;
+    background: rgb(225, 226, 220);
 }
 
 .footer .footer-content{
@@ -1312,10 +1485,14 @@ html::-webkit-scrollbar-thumb{
     width: 30rem;
 }
 
-.footer-content .data a{
+.footer-content .links-container{
     display: flex;
     flex-direction: column;
     justify-content: right;
+    
+}
+.footer-content a{
+    display: inline;
     color: var(--black);
 }
 
@@ -1360,38 +1537,27 @@ html::-webkit-scrollbar-thumb{
 .footer .permissions img:hover{
     transform: scale(0.9);
 }
-/* .footer-container{
-    background-color: #f6f6f6;
-    width: 100%;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5rem;
-}
 
-.footer-container .identify{
-    padding-right: 3rem;
-    font-size: 1.2rem;
-}
 
-.footer-container .content{
-    direction: ltr;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    padding:0 3rem 0 3rem;
-}
 
-.footer-container img{
-    width: 8rem;
-    height: 10rem;
-    border-radius: 1px;
-}
 
-.footer-container img:hover{
-    transform: scale(1.1);
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
