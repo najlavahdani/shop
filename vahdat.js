@@ -128,62 +128,61 @@ var specialSwiper = new Swiper(".special-swiper", {
 
 
 //home swiper section starts
+// var swiper = new Swiper(".homeswiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 0,
+//     grabCursor:true,
+//     loop: true,
+// });
+
 var swiper = new Swiper(".homeswiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     grabCursor:true,
     loop: true,
 });
+
+setInterval(function() {
+    swiper.slideNext();
+}, 3000);
 //home swiper section ends
 
 
 
 
+// Get all elements with the class 'animated-shop-btn'
+var animatedBtns = document.querySelectorAll('.animated-shop-btn');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-const shopBtn = document.querySelector(".animated-shop-btn");
-const title = document.querySelector(".animated-title");
-
-function addShopAnimation() {
-  shopBtn.classList.add("animate__flash");
+// Loop through all the elements and add the animation class to each one
+for (var i = 0; i < animatedBtns.length; i++) {
+  animatedBtns[i].classList.add('animate__animated', 'animate__flash');
 }
 
-function removeShopAnimation() {
-  shopBtn.classList.remove("animate__flash");
-}
-
-function addTitleAnimation() {
-  title.classList.add("animate__heartBeat");
-}
-
-function removeTitleAnimation() {
-  title.classList.remove("animate__heartBeat");
-}
-
-function repeatAnimations() {
-  addShopAnimation();
-  addTitleAnimation();
-
-  setTimeout(() => {
-    removeShopAnimation();
-    removeTitleAnimation();
-    setTimeout(repeatAnimations, 1000);
-  }, 1000);
-}
+// Add and remove the animation class from each element every 1 second
+setInterval(function() {
+  for (var i = 0; i < animatedBtns.length; i++) {
+    animatedBtns[i].classList.toggle('animate__flash');
+  }
+}, 500);
 
 
-repeatAnimations();
+
+
+
+
+// Get all elements with the class 'animate__heartBeat'
+var animatedElements = document.querySelectorAll('.animate__heartBeat');
+
+// Add and remove the animation class from each element every 1 second
+setInterval(function() {
+  for (var i = 0; i < animatedElements.length; i++) {
+    animatedElements[i].classList.toggle('animate__heartBeat');
+  }
+}, 800);
+
+
+
+
+
 
 
