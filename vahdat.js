@@ -106,6 +106,50 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
-
+});
 //brands swiper section ends
+
+//home swiper section starts
+var swiper = new Swiper(".homeswiper", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    grabCursor:true,
+    loop: true,
+});
+//home swiper section ends
+
+
+const shopBtn = document.querySelector(".animated-shop-btn");
+const title = document.querySelector(".animated-title");
+
+function addShopAnimation() {
+  shopBtn.classList.add("animate__flash");
+}
+
+function removeShopAnimation() {
+  shopBtn.classList.remove("animate__flash");
+}
+
+function addTitleAnimation() {
+  title.classList.add("animate__heartBeat");
+}
+
+function removeTitleAnimation() {
+  title.classList.remove("animate__heartBeat");
+}
+
+function repeatAnimations() {
+  addShopAnimation();
+  addTitleAnimation();
+
+  setTimeout(() => {
+    removeShopAnimation();
+    removeTitleAnimation();
+    setTimeout(repeatAnimations, 1000);
+  }, 1000);
+}
+
+
+repeatAnimations();
+
+

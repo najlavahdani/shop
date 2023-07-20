@@ -718,41 +718,205 @@ html::-webkit-scrollbar-thumb{
 
 /* home section starts */
 .banner{
-    background: url(image/hbg.jpg) no-repeat;
+    background: #eee;
     background-size: cover;
     background-position: center;
     height: 45rem;
+}
+/* slide 1 starts */
+.banner .slide-1{
+    background-color: rgba(193, 193, 211);
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
-
-.banner h3{
-    color: var(--black);
-    font-size: 4.5rem;
-}
-
-.banner p{
-    color: var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
-    padding: 1rem 0;
-    width: 60rem;
-}
-
-.banner .content{
+.banner .slide-1 .content{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
-.banner .content a{
+.banner .slide-1 h3{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.banner .slide-1 p{
+    width: 60rem;
+    font-size: 1.5rem;
+}
+/* slide 1 ends */
+
+/* slide 2 starts */
+.banner .slide-2{
+    background: url(image/slide2.png);
+}
+
+.banner .slide-2 img{
+    width: 60rem;
+    height: 32rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 6rem;
+    right:12rem;
+}
+
+.banner .slide-2 .content{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    top: 11rem;
+    right: 95rem;
+}
+
+.banner .slide-2 p,
+.banner .slide-2 h3{
+    color: var(--black);
+}
+
+.banner .slide-2 a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 6rem;
+    bottom: 7.8rem;
+}
+
+.banner .slide-2 a:hover{
+    transform: scale(1.05);
+    font-weight: 600;
+}
+/* slide 2 ends */
+
+
+/* slide 3 starts */
+.banner .slide-3{
+    background: url(image/slide3.png);
+}
+
+.banner .slide-3 .images-container{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    gap: 2rem;
+    top: 16rem;
+    right: 21rem;
 }
 
+.banner .slide-3 .images-container img{
+    width: 200px;
+    height: 150px;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
 
+.banner .slide-3 p{
+    font-size: 1.5rem;
+    width: 35rem;
+    max-height: 25rem;
+    overflow: hidden;
+    position: absolute;
+    left: 24rem;
+    top: 9rem;
+}
+
+.banner .slide-3 a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 32rem;
+    bottom: 3rem;
+}
+
+.banner .slide-3 a:hover{
+    transform: scale(1.05);
+    font-weight: 600;
+}
+/* slide 3 ends */
+
+
+/* slide 4 starts */
+.banner .slide-4{
+    background: url(image/slide4.png);
+}
+
+.banner .slide-4 h1{
+    font-size: 5rem;
+    color: #481f1f;
+    position: absolute;
+    top: 9rem;
+    right: 3rem;
+    font-weight: bolder;
+}
+
+.banner .slide-4 p{
+    position: absolute;
+    font-size: 2rem;
+}
+
+.banner .slide-4 .first{
+    position: absolute;
+    right: 70rem;
+    top: 5rem;
+}
+
+.banner .slide-4 .second{
+    position: absolute;
+    right: 80rem;
+    top: 15rem;
+}
+
+.banner .slide-4 .third{
+    position: absolute;
+    right: 75rem;
+    top: 25rem;
+}
+
+.banner .slide-4 .forth{
+    position: absolute;
+    right: 100rem;
+    top: 35rem;
+    font-weight: 500;
+}
+/* slide 4 ends */
+
+
+/* slide 5 starts */
+.banner .slide-5{
+    background: url(image/slide-5.png);
+}
+
+.banner .slide-5 h1{
+    font-size: 5rem;
+    color: #eee;
+    position: absolute;
+    top: 3rem;
+    right: 22rem;
+    font-weight: bolder;
+    
+}
+
+.banner .slide-5 p{
+    font-size: 2rem;
+    color: #eee;
+    position: absolute;
+    top: 13rem;
+    right: 8rem;
+    font-weight: bolder;
+    width: 80rem;
+    text-align: center;
+}
+/* slide 5 ends */
 /* icons section starts */
 .icons-container{
     display: grid;
