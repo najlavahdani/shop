@@ -142,7 +142,7 @@ html::-webkit-scrollbar-thumb{
     padding: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 0.3rem;
-    width: 30rem;
+    width: 20%;
     text-align: center;
     margin-left: 2rem;
 }
@@ -162,7 +162,7 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     background:rgba(255, 255, 255, 0.9);
     position: fixed;
-    top: 0; right: -200%;
+    top: 0; right: -105%;
     z-index: 10000;
     height: 100%;
     width: 100%;
@@ -1639,61 +1639,27 @@ html::-webkit-scrollbar-thumb{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:991px){
-    html{
-        font-size: 55%;
+    .login-container{
+        display: none;
     }
 }
 
 
 
 
-@media(max-width:768px){
-    .header-1 .content{
-        display: none;
+/* @media(max-width:991px){
+    html{
+        font-size: 55%;
     }
 
-    .header .header-2 .mobile-items #search-btn{
-        display: inline;
-    } 
+} */
 
-    .header .header-2 .search-form{
-        position: absolute;
-        top: -115%; right: 2rem;
-        width: 90%;
-        box-shadow: var(--box-shadow);
-    }
 
-    .header .header-2 .search-form.active{
-        top: +12rem;
-    }
 
-    .header .header-2 .logo img{
-        height: 10rem;
-        width: 10rem;
-    }
 
-    /* html{
+/* @media(max-width:768px){
+    html{
         scroll-padding-top: 0;
     }
 
@@ -1758,30 +1724,26 @@ html::-webkit-scrollbar-thumb{
         padding: 20px 0 10px;
     } */
     /* cart section ends */
-/* 
-    .header-3{
+
+    /* .header-3{
         display: none;
     }
 
     .bot-nav .bottom-navbar{
         display: flex;
-    } */
+    }
     
-}
+} */
 
 
-@media(max-width:450px){
-    
-
-    /* html{
+/* @media(max-width:450px){
+    html{
         font-size: 50%;
     }
-
-    
 
     .header .header-1 .login{
         font-size: 1rem;
         width: 45%;
-    } */
+    }
     
-}
+} */
