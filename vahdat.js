@@ -30,14 +30,22 @@ window.onscroll = () => {
 
 
 //cart section starts
-cartSection= document.querySelector('.cart-section .cart')
-document.querySelector('.cart-icon').onclick =() =>{
-    cartSection.classList.toggle('active')
-}
+var cartIcons = document.querySelectorAll('.cart-icon');
 
-document.querySelector('#close-cart').onclick =() =>{
-    cartSection.classList.remove('active')
-}
+cartIcons.forEach(function(cartIcon) {
+    cartIcon.addEventListener('click', function() {
+        var cart = document.querySelector('.cart');
+        cart.classList.toggle('active');
+    });
+});
+
+
+var closeButton = document.getElementById('close-cart');
+
+closeButton.addEventListener('click', function() {
+    var cart = document.querySelector('.cart');
+    cart.classList.remove('active');
+});
 //cart section ends
 
 
@@ -128,12 +136,7 @@ var specialSwiper = new Swiper(".special-swiper", {
 
 
 //home swiper section starts
-// var swiper = new Swiper(".homeswiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     grabCursor:true,
-//     loop: true,
-// });
+
 
 var swiper = new Swiper(".homeswiper", {
     slidesPerView: 1,
@@ -144,7 +147,7 @@ var swiper = new Swiper(".homeswiper", {
 
 setInterval(function() {
     swiper.slideNext();
-}, 3000);
+}, 5000);
 //home swiper section ends
 
 
