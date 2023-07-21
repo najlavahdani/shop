@@ -819,6 +819,7 @@ html::-webkit-scrollbar-thumb{
 /* mobile home section starts */
 .mobile-home{
     background: url(image/hbg.jpg);
+    display: none;
 }
 
 .mobile-banner-content{
@@ -1557,6 +1558,25 @@ html::-webkit-scrollbar-thumb{
         display: none;
     }
 
+    .mobile-home{
+        display: block;
+    }
+
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row dense;
+        gap: 1.5rem;
+    }
+      
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
     /* html{
         scroll-padding-top: 0;
     }
@@ -1649,6 +1669,19 @@ html::-webkit-scrollbar-thumb{
         width: 85%;
     }
 
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row dense;
+        gap: 1.5rem;
+    }
+      
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
     /* html{
         font-size: 50%;
     }
