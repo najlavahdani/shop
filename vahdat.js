@@ -136,18 +136,33 @@ var specialSwiper = new Swiper(".special-swiper", {
 
 
 //home swiper section starts
-
-
+//laptop home banner swiper
 var swiper = new Swiper(".homeswiper", {
     slidesPerView: 1,
     spaceBetween: 0,
-    grabCursor:true,
+    grabCursor: true,
     loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
 });
 
-setInterval(function() {
-    swiper.slideNext();
-}, 5000);
+
+
+//mobile home banner swiper
+var swiper2 = new Swiper(".mobile-homeswiper", {
+    slidesPerView: 2,
+    spaceBetween: 16,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+
 //home swiper section ends
 
 

@@ -753,6 +753,11 @@ html::-webkit-scrollbar-thumb{
     width: 100%;
 }
 /* slide 1 starts */
+.swiper.homeswiper.banner {
+  background-image: url("image/homephoto.png");
+  background-size: cover;
+  background-position: center;
+}
 .banner .slide-1{
     background-color: rgba(193, 193, 211);
     display: flex;
@@ -781,36 +786,78 @@ html::-webkit-scrollbar-thumb{
 }
 /* slide 1 ends */
 
-
-
 /* slide 2 starts */
 .banner .slide-2{
-    background: url(image/secondslide.jpg)
+    background: url(image/secondslide.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* slide 2 ends */
-
-
-
 
 /* slide 3 starts */
 .banner .slide-3{
     background: url(image/thirdbannerslide.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* slide 3 ends */
-
-
-
 
 /* slide 4 starts */
 .banner .slide-4{
     background: url(image/forthslidebanner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* slide 4 ends */
 
 
-/* slide 5 starts */
-/* slide 5 ends */
 
+
+
+
+
+/* mobile home section starts */
+.mobile-home{
+    background: url(image/hbg.jpg);
+}
+
+.mobile-banner-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-home-title{
+    color: var(--black);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.mobile-home-description{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    text-align: center;
+}
+
+.mobile-homeswiper{
+    width: 100%;
+    padding: 2rem;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img{
+    width: 20rem;
+    height: 20rem;
+    
+}
 
 /* icons section starts */
 .icons-container{
@@ -1478,6 +1525,10 @@ html::-webkit-scrollbar-thumb{
         display: inline;
     } 
 
+    .header .header-2{
+        box-shadow: var(--box-shadow);
+    }
+
     .header .header-2 .search-form{
         position: absolute;
         top: -115%; right: 2rem;
@@ -1500,6 +1551,10 @@ html::-webkit-scrollbar-thumb{
 
     .bot-nav .bottom-navbar{
         display: flex;
+    }
+
+    .banner{
+        display: none;
     }
 
     /* html{
