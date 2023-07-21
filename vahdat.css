@@ -341,7 +341,7 @@ html::-webkit-scrollbar-thumb{
     position: fixed;
     top: 0;
     left: 0;
-    right: 200%;
+    right: 300%;
     display: block;
     overflow: hidden;
     z-index: 10000;
@@ -618,9 +618,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 .bot-nav .bottom-navbar a{
+    font-size: 1.5rem;
     padding: 1.7rem;
     color: #fff;
-    border-radius: 100%;
 }
 
 .bot-nav .bottom-navbar a:hover{
@@ -1693,6 +1693,14 @@ html::-webkit-scrollbar-thumb{
         width: 10rem;
     }
 
+    .header-3{
+        display: none;
+    }
+
+    .bot-nav .bottom-navbar{
+        display: flex;
+    }
+
     /* html{
         scroll-padding-top: 0;
     }
@@ -1771,7 +1779,29 @@ html::-webkit-scrollbar-thumb{
 
 
 @media(max-width:450px){
+    .bot-nav .bottom-navbar a{
+        font-size: 1.2rem;
+    }
     
+    .cart-section .cart{
+        /* opening */
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 300%;
+        display: block;
+        overflow: hidden;
+        z-index: 10000;
+        width: 85%;
+        height: 100vh;
+        padding: 20px 10px 20px 30px;
+        transition: all 0.5s ease 0s;
+        transform: translateX(100%);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+    }
 
     /* html{
         font-size: 50%;
