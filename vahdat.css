@@ -753,11 +753,6 @@ html::-webkit-scrollbar-thumb{
     width: 100%;
 }
 /* slide 1 starts */
-.swiper.homeswiper.banner {
-  background-image: url("image/homephoto.png");
-  background-size: cover;
-  background-position: center;
-}
 .banner .slide-1{
     background-color: rgba(193, 193, 211);
     display: flex;
@@ -783,6 +778,11 @@ html::-webkit-scrollbar-thumb{
 .banner .slide-1 p{
     width: 60rem;
     font-size: 1.5rem;
+}
+
+.banner .slide-1 .image img{
+    width: 35rem;
+    height: 35rem;
 }
 /* slide 1 ends */
 
@@ -901,7 +901,7 @@ html::-webkit-scrollbar-thumb{
     padding-left: 3rem;
     padding-right: 3rem;
     cursor: pointer;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .categories .container .box{
@@ -1070,7 +1070,6 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .slide-container{
@@ -1090,6 +1089,11 @@ html::-webkit-scrollbar-thumb{
     margin-right: 20px;
     margin-left: 20px;
     box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 45rem;
+    overflow: hidden;
 }
 
 .card:hover{
@@ -1139,8 +1143,8 @@ html::-webkit-scrollbar-thumb{
 
 .card-image{
    position: relative;
-   height: 150px;
-   width: 150px ; 
+   height: 15rem;
+   width: 15rem ; 
    border-radius: 50%;
    background: #fff;
    padding: 3px;
@@ -1164,6 +1168,7 @@ html::-webkit-scrollbar-thumb{
     font-size: 14px;
     color: #707070;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .swiper-navbtn{
@@ -1186,16 +1191,17 @@ html::-webkit-scrollbar-thumb{
 
 /* special product section starts */
 .special-slide-container{
-    max-width: 140rem;
+    max-width: 90%;
     height: 25rem;
     background: rgb(225, 226, 220);
     border-radius: 1.5rem;
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .special-slide-content{
-    margin: 40px 40px;
+    margin: 4rem 4rem;
     overflow: hidden;
 }
 
@@ -1204,6 +1210,7 @@ html::-webkit-scrollbar-thumb{
     background-color: #efefef;
     box-shadow: var(--box-shadow);
     height: 20rem;
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1232,7 +1239,7 @@ html::-webkit-scrollbar-thumb{
 
 .special-card-image{
     position: relative;
-    row-gap: 5px;
+    row-gap: 0.5rem;
 }
 
 .special-card-image img{
@@ -1276,6 +1283,7 @@ html::-webkit-scrollbar-thumb{
 
 .empty-card{
     margin-top: 2rem;
+    width: 20rem;
     background: transparent;
     height: 16rem;
     display: flex;
@@ -1311,6 +1319,7 @@ html::-webkit-scrollbar-thumb{
 .last-card{
     margin-top: 2rem;
     height: 16rem;
+    width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1577,6 +1586,28 @@ html::-webkit-scrollbar-thumb{
         padding: 2rem 0;
     }
 
+    .swiper-slide .card-content .discription{
+        display: none;
+    }
+
+    .card{
+        background: #eee;
+        height: 25rem;
+    }
+
+    .overlay{
+        background: transparent;
+    }
+
+    .overlay::before,
+    .overlay::after{
+        background: transparent;
+    }
+
+
+    
+
+    
     /* html{
         scroll-padding-top: 0;
     }

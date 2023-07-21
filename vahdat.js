@@ -101,7 +101,7 @@ document.querySelector('#close-categories').onclick=() =>{
 
 //brands and special products swiper section starts
 var mySwiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: "auto",
     spaceBetween: 25,
     grabCursor:true,
     loop: true,
@@ -117,7 +117,7 @@ var mySwiper = new Swiper(".mySwiper", {
   
 
 var specialSwiper = new Swiper(".special-swiper", {
-  slidesPerView: 5,
+  slidesPerView: "auto",
   spaceBetween: 25,
   grabCursor:true,
   pagination: {
