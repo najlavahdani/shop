@@ -81,3 +81,21 @@ document.querySelector('#close-categories').onclick=() =>{
 }
 
 //dropdown categories list ends
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
