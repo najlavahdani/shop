@@ -745,7 +745,36 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+/* icons section starts */
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+    gap: 1.5rem;
+}
 
+.icons-container .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons-container .icon i{
+    font-size: 3.5rem;
+    color: var(--green);
+}
+
+.icons-container .icon .content h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.icons-container .icon .content p{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
 
 
 
@@ -810,6 +839,20 @@ html::-webkit-scrollbar-thumb{
     .bot-nav .bottom-navbar{
         display: flex;
     }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row dense;
+        gap: 1.5rem;
+    }
+      
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
 }
 
 
@@ -827,5 +870,19 @@ html::-webkit-scrollbar-thumb{
     .cart-section .cart{
         /* opening */
         width: 85%;
+    }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row dense;
+        gap: 1.5rem;
+    }
+      
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
     }
 }

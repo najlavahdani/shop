@@ -174,14 +174,14 @@
 .box-in-filter.active label .close-box-in-filter {
     display: inline-block;
 }
-/* categories in filter section ends */
 
 
-/* button part starts */
+/* button section starts */
 input[type="checkbox"] {
     width: 40px;
     height: 20px;
     position: relative;
+    -webkit-appearance: none;
     background-color: #c6c6c6;
     border-radius: 20px;
     outline: none;
@@ -207,9 +207,8 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
-/* button part ends */
+/* button section ends */
 /* filter section ends */
-
 
 
 
