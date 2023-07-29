@@ -349,6 +349,18 @@ input[type="checkbox"]:checked::before {
 
 
 @media(max-width:768px){
+    .grouping{
+        display: none;
+    }
+
+    .grouping-title{
+        display: none;
+    }
+
+    .products-count{
+        display: none;
+    }
+
     .product-page-home{
         display: flex;
         flex-direction: column;
@@ -356,8 +368,7 @@ input[type="checkbox"]:checked::before {
 
     .filters{
         width: 100%;
-        /* margin-left: 0.5rem;
-        padding: 1.5rem; */
+        
     }
 
     .product{
