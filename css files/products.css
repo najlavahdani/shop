@@ -121,13 +121,13 @@
 /* search in filter section starts */
 
 /* categories in filter section starts */
-.categories-in-filter{
+.box-in-filter{
     padding: 1rem;
     border: 0.01rem solid var(--black);
     border-radius: 0.5rem;
 }
 
-.close-categories-in-filter{
+.close-box-in-filter{
     font-size: 2.5rem;
 }
 
@@ -143,11 +143,11 @@
     transform: scale(1.02);
 }
 
-.products-list{
+.list{
     list-style: none;
 }
 
-.product-elem{
+.elem{
     text-align: center;
     font-size: 1.2rem;
     padding: 1.5rem 0 1.5rem 0;
@@ -156,25 +156,60 @@
 }
 
 
-.product-elem:hover > .product-elem-span{
+.elem:hover > .elem-span{
     color: var(--green);
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 
-.categories-in-filter #categories-list {
+.box-in-filter .list {
     display: none;
 }
   
-.categories-in-filter.active #categories-list {
+.box-in-filter .list.active {
     display: block;
 }
   
-.categories-in-filter.active label .close-categories-in-filter {
+.box-in-filter.active label .close-box-in-filter {
     display: inline-block;
 }
+/* categories in filter section ends */
+
+
+/* button part starts */
+input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+  
+input[type="checkbox"]:checked {
+    background-color: var(--dark-color);
+}
+  
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+  
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+/* button part ends */
 /* filter section ends */
+
 
 
 

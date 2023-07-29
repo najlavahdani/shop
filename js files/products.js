@@ -1,15 +1,19 @@
-const categoriesLabel = document.getElementById("categories-label");
-const categoriesList = document.getElementById("categories-list");
-const closeCategories = document.querySelector(".close-categories-in-filter");
+const filterBoxes = document.querySelectorAll(".box-in-filter");
 
-categoriesLabel.addEventListener("click", function(event) {
-  event.stopPropagation();
-  categoriesLabel.parentElement.classList.toggle("active");
-  if (closeCategories.innerHTML === "+") {
-    closeCategories.innerHTML = "-";
-  } else {
-    closeCategories.innerHTML = "+";
-  }
+filterBoxes.forEach(function(filterBox) {
+  const label = filterBox.querySelector(".grouping-list-label");
+  const list = label.nextElementSibling;
+  const closeBox = label.querySelector(".close-box-in-filter");
+
+  label.addEventListener("click", function(event) {
+    event.stopPropagation();
+    list.classList.toggle("active");
+    if (list.classList.contains("active")) {
+      closeBox.textContent = "-";
+    } else {
+      closeBox.textContent = "+";
+    }
+  });
 });
 
 
