@@ -217,41 +217,34 @@ input[type="checkbox"]:checked::before {
 .product{
     width: 75%;
     margin: 0 2.5rem 0 3rem;
-    padding: 1.5rem;
+    padding: 1.5rem;    
 }
 
 .products-container{
     border: 0.01rem solid var(--black);
+    
 }
 
 .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px ,auto));
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
-    cursor: pointer;
     margin-bottom: 3rem;
 }
 
-.product-card-content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-}
-
 .product-article{
-    width: 20%;
     background: rgba(87, 107, 189, 0.2);
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
     border-radius: 1rem;
     border:0.1rem solid var(--dark-color);
+    width: fit-content;
 }
 
 .product-article:hover{
