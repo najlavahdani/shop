@@ -73,7 +73,6 @@
     color: var(--black);
 }
 
-
 .remove-filters{
     color: var(--dark-color);
     cursor: pointer;
@@ -334,6 +333,39 @@ input[type="checkbox"]:checked::before {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .product-page-home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filters{
+        width: 100%;
+        /* margin-left: 0.5rem;
+        padding: 1.5rem; */
+    }
+
+    .product{
+        width: 90%;
+        margin: 0 2.5rem 0 3rem;
+        padding: 1.5rem;    
+    }
+}
 
 
 
