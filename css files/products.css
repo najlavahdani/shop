@@ -318,8 +318,18 @@ input[type="checkbox"]:checked::before {
 /* product section ends */
 
 
+/* another products section starts */
+.another-product{
+    padding-top: 3rem;
+    border-top: 0.02rem solid #eee;
+}
 
-
+.swiper-header h1{
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
 
 
 

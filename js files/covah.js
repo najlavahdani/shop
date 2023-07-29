@@ -83,19 +83,19 @@ document.querySelector('#close-categories').onclick=() =>{
 //dropdown categories list ends
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//special swiper starts
+var specialSwiper = new Swiper(".special-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 25,
+    grabCursor:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".special-prev",
+      prevEl: ".special-next",
+    },
+  });
+//special swiper ends
 
