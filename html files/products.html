@@ -260,25 +260,39 @@
         <section class="filters">
             <div class="filters-container">
                 <header class="filters-header">
-                    <h1 class="filters-title">فیلتر ها</h1>
+                    <h1 class="fiters-titlel">فیلتر ها</h1>
                     <span class="remove-filters">حذف فیلتر ها</span>
                 </header>
 
-                <div class="search-in-filters">
-                    <h1 class="filter-search-title">جست و جو در نتایج</h1>
-                    <div class="form-container">
-                        <form action="search" id="filter-search-box" class="filter-search-form">
-                            <label for="filter-search-box" class="fa-solid fa-magnifying-glass"></label>
-                            <input class="search-input" type="search" placeholder="نام برند یا محصول مورد نظر " >
-                        </form>
+                <div class="filter-boxes">
+                    <div class="search-in-filters">
+                        <h1 class="filter-search-title">جست و جو در نتایج</h1>
+                        <div class="form-container">
+                            <form action="search" id="filter-search-box" class="filter-search-form">
+                                <label for="filter-search-box" class="fa-solid fa-magnifying-glass"></label>
+                                <input class="search-input" type="search" placeholder="نام برند یا محصول مورد نظر " >
+                            </form>
+                        </div>
                     </div>
-                </div>
 
-                <div class="categories-in-filter">
-                    <label for="grouping-list">
-                        <h1>دسته بندی کالا ها</h1>
-                        <i class="fa-solid fa-plus"></i>
-                    </label>
+                    <div class="categories-in-filter">
+                        <label for="grouping-list" class="grouping-list-label" id="categories-label">
+                          <h1>دسته بندی کالا ها</h1>
+                          <span class="close-categories-in-filter">-</span>
+                        </label>
+                        <ul class="products-list" id="categories-list">
+                          <li class="product-elem"><span class="product-elem-span">اتو</span></li>
+                          <li class="product-elem"><span class="product-elem-span">جارو برقی</span></li>
+                          <li class="product-elem"><span class="product-elem-span">ساندویچ ساز</span></li>
+                          <li class="product-elem"><span class="product-elem-span">مخلوط کن</span></li>
+                          <li class="product-elem"><span class="product-elem-span">سبزی خوردکن</span></li>
+                          <li class="product-elem"><span class="product-elem-span">پنکه</span></li>
+                          <li class="product-elem"><span class="product-elem-span">تلفن</span></li>
+                          <li class="product-elem"><span class="product-elem-span">بخاری</span></li>
+                        </ul>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -518,29 +532,14 @@
             </div>
         </section>
     </section>
-
-
-    <!-- <div class="select-box">
-        <div class="select-option">
-            <input type="text" placeholder="select" id="soValue" readonly name="">
-        </div>
-        <div class="content">
-            <div class="search">
-                <input type="text" id="optionSearch" placeholder="search">
-            </div>
-            <ul class="options"> 
-                <li>person</li>
-                <li>najla</li>
-                <li>amene</li>
-                <li>baghi</li>
-                <li>hadi</li>
-                <li>hanan</li>
-                <li>ali</li>
-                <li>amin</li>
-            </ul>
-        </div>
-    </div> -->
     <!-- products section ends -->
+
+
+    <!-- common js file link -->
     <script src="../js files/covah.js"></script>
+    
+    <!-- custom js file link -->
+    <script src="../js files/products.js"></script>
+
 </body>
 </html>
