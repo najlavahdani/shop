@@ -34,6 +34,10 @@ closeCommentBtn.addEventListener('click', function() {
 });
 
 
-//another images for every product swiper section starts
+function toggleText() {
+  var textContent = document.querySelector('.text-content');
+  var detailsHeader = document.querySelector('.details-header');
 
-//another images for every product swiper section ends
+  textContent.classList.toggle('visible');
+  detailsHeader.classList.toggle('border-opened');
+}
