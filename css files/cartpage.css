@@ -109,5 +109,7 @@ th {
 /* products list in cart section ends */
 
 /* total price section starts */
-
+.total-price{
+    border: var(--border-hover);
+}
 /* total price section ends */
