@@ -89,14 +89,13 @@ var specialSwiper = new Swiper(".special-swiper", {
     spaceBetween: 25,
     grabCursor:true,
     pagination: {
-      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
       nextEl: ".special-prev",
       prevEl: ".special-next",
     },
-  });
+});
 //special swiper ends
 
 //search section starts

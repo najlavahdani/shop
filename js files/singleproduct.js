@@ -32,3 +32,8 @@ closeCommentBtn.addEventListener('click', function() {
   // حذف کلاس active از add-comment-container
   addCommentContainer.classList.remove('active');
 });
+
+
+//another images for every product swiper section starts
+
+//another images for every product swiper section ends
