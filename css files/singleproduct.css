@@ -453,5 +453,18 @@
         width: 100%;
         height: fit-content;
     }
+
+    .details-comments{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 4rem 4rem 4rem;
+        background-color: #eee;
+    }
+
+    .comments-container{
+        padding: 2rem;
+    }
     
 }
