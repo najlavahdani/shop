@@ -41,3 +41,12 @@ function toggleText() {
   textContent.classList.toggle('visible');
   detailsHeader.classList.toggle('border-opened');
 }
+
+
+function toggleComments() {
+  var commentsContainer = document.querySelector('.comments-container');
+  commentsContainer.style.display = (commentsContainer.style.display === 'none') ? 'flex' : 'none';
+
+  var addCommentBtn = document.querySelector('.add-comment');
+  addCommentBtn.style.display = (addCommentBtn.style.display === 'none') ? 'inline-block' : 'none';
+}

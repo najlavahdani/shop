@@ -308,176 +308,180 @@
     </section>
     <!-- product section ends -->
 
-    <!-- details section starts -->
-    <section class="details">
-        <header class="details-header" onclick="toggleText()">توضیحات</header>
+    <!-- details and comments container starts -->
+    <div class="details-comments">
+        <!-- details section starts -->
+        <section class="details">
+            <header class="details-header" onclick="toggleText()">توضیحات</header>
 
-        <div class="details-content">
-            <p class="text-content">با اتو بخار مسافرتی Geepas بدون استرس بمانید و از تجربه اتوی صاف و یکنواخت لذت ببرید. جعبه اتوی 800 واتی که به تازگی طراحی شده است، دارای اتوی مرطوب و خشک است و به شما کمک می کند تا در حین انجام کار، به راحتی چروک ها و چروک های روی لباس های خود را از بین ببرید. جعبه آهنی پر جنب و جوش سفید و آبی دارای خروجی بخار مداوم برای ارائه بهترین نتایج است. فوران قدرتمند بخار، لباس های شما را چروک و شفاف نگه می دارد و ظاهری تازه و جدید به آن ها می بخشد. دستگیره ارگونومیک عملکرد ایمن و پایدار را بدون گرم شدن بیش از حد تضمین می کند و کارآمدترین نتایج را به همراه دارد. جعبه آهنی مجهز به محافظ در برابر گرمای بیش از حد است که به شما کمک می کند تا از انواع پارچه ها بدون سوختن محافظت کنید و زندگی شما را آسان تر کند. علاوه بر این، جعبه آهنی مجهز به نشانگر قدرت است تا شما را از دما مطلع کند و از سوختن انگشتان شما جلوگیری کند. دارای کفی باکیفیت است که به راحتی روی لباس می چرخد ​​و بهترین نتیجه را ایجاد می کند. طراحی سبک، جمع و جور و قابل حمل با یک دسته تاشو حمل آن را آسان می کند و می توان آن را جابه جا کرد. اتو بخار مسافرتی Geepas دارای 2 سال گارانتی می باشد. ابعاد این محصول 20.9x10.2x10.3 سانتی متر و وزن آن 0.2 کیلوگرم است.</p>
-        </div>
-    </section>
-    <!-- details section ends -->
-
-    <!-- comments section starts -->
-    <section class="comments">
-        <header class="comments-header">نظرات</header>
-
-        <div class="new-comment">
-            <div class="add-comment btn">
-                <span>+</span>
-                <span>در مورد این کالا نظر دهید...</span>
+            <div class="details-content">
+                <p class="text-content">با اتو بخار مسافرتی Geepas بدون استرس بمانید و از تجربه اتوی صاف و یکنواخت لذت ببرید. جعبه اتوی 800 واتی که به تازگی طراحی شده است، دارای اتوی مرطوب و خشک است و به شما کمک می کند تا در حین انجام کار، به راحتی چروک ها و چروک های روی لباس های خود را از بین ببرید. جعبه آهنی پر جنب و جوش سفید و آبی دارای خروجی بخار مداوم برای ارائه بهترین نتایج است. فوران قدرتمند بخار، لباس های شما را چروک و شفاف نگه می دارد و ظاهری تازه و جدید به آن ها می بخشد. دستگیره ارگونومیک عملکرد ایمن و پایدار را بدون گرم شدن بیش از حد تضمین می کند و کارآمدترین نتایج را به همراه دارد. جعبه آهنی مجهز به محافظ در برابر گرمای بیش از حد است که به شما کمک می کند تا از انواع پارچه ها بدون سوختن محافظت کنید و زندگی شما را آسان تر کند. علاوه بر این، جعبه آهنی مجهز به نشانگر قدرت است تا شما را از دما مطلع کند و از سوختن انگشتان شما جلوگیری کند. دارای کفی باکیفیت است که به راحتی روی لباس می چرخد ​​و بهترین نتیجه را ایجاد می کند. طراحی سبک، جمع و جور و قابل حمل با یک دسته تاشو حمل آن را آسان می کند و می توان آن را جابه جا کرد. اتو بخار مسافرتی Geepas دارای 2 سال گارانتی می باشد. ابعاد این محصول 20.9x10.2x10.3 سانتی متر و وزن آن 0.2 کیلوگرم است.</p>
             </div>
+        </section>
+        <!-- details section ends -->
 
-            <div class="add-comment-container">
-                <div class="add-comment-content">
-                    <div class="add-comment-header">
-                        <h1 class="add-comment-header-text">نظر شما درباره ی محصول</h1>
-                        <i id="close-comment-btn" class="fa-solid fa-xmark"></i>
-                    </div>
-                    <form>
-                        <span class="get-data">لطفا نام خود را وارد کنید:</span>
-                        <input type="text" placeholder="نجلا وحدانی" class="box">
+        <!-- comments section starts -->
+        <section class="comments">
+            <header class="comments-header" onclick="toggleComments()">نظرات</header>
 
-                        <span class="get-data">متن مورد نظر خود را وارد کنید:</span>
-                        <textarea name="comment" rows="4" cols="50" class="box" placeholder="اینجا بنویسید"></textarea>
-
-                        <input type="submit" class="btn sending-comment-btn" value="ارسال نظر">
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="comments-container">
-            <div class="single-comment-container">
-                <div class="comment-container-header">
-                    <span class="username">نجلا وحدانی</span>
-                    <span class="purchaser">خریدار</span>
-                    <span class="date">11 مرداد 1402</span>
+            <div class="new-comment">
+                <div class="add-comment btn">
+                    <span>+</span>
+                    <span>در مورد این کالا نظر دهید...</span>
                 </div>
 
-                <div class="comment-container-content">
-                    خوب بود، پیشنهاد میکنم.
-                </div>
-                
-                <div class="comment-react">
-                    <div class="comment-react-option">
-                        <span class="likes-count">0</span>
-                        <i class="fa-solid fa-thumbs-up"></i>
-                    </div>
+                <div class="add-comment-container">
+                    <div class="add-comment-content">
+                        <div class="add-comment-header">
+                            <h1 class="add-comment-header-text">نظر شما درباره ی محصول</h1>
+                            <i id="close-comment-btn" class="fa-solid fa-xmark"></i>
+                        </div>
+                        <form>
+                            <span class="get-data">لطفا نام خود را وارد کنید:</span>
+                            <input type="text" placeholder="نجلا وحدانی" class="box">
 
-                    <div class="comment-react-option">
-                        <span class="dislikes-count">0</span>
-                        <i class="fa-solid fa-thumbs-down"></i>
+                            <span class="get-data">متن مورد نظر خود را وارد کنید:</span>
+                            <textarea name="comment" rows="4" cols="50" class="box" placeholder="اینجا بنویسید"></textarea>
+
+                            <input type="submit" class="btn sending-comment-btn" value="ارسال نظر">
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class="single-comment-container">
-                <div class="comment-container-header">
-                    <span class="username">نجلا وحدانی</span>
-                    <span class="purchaser">خریدار</span>
-                    <span class="date">11 مرداد 1402</span>
-                </div>
-
-                <div class="comment-container-content">
-                    خوب بود، پیشنهاد میکنم.
-                </div>
-                
-                <div class="comment-react">
-                    <div class="comment-react-option">
-                        <span class="likes-count">0</span>
-                        <i class="fa-solid fa-thumbs-up"></i>
+            <div class="comments-container">
+                <div class="single-comment-container">
+                    <div class="comment-container-header">
+                        <span class="username">نجلا وحدانی</span>
+                        <span class="purchaser">خریدار</span>
+                        <span class="date">11 مرداد 1402</span>
                     </div>
 
-                    <div class="comment-react-option">
-                        <span class="dislikes-count">0</span>
-                        <i class="fa-solid fa-thumbs-down"></i>
+                    <div class="comment-container-content">
+                        خوب بود، پیشنهاد میکنم.
+                    </div>
+                    
+                    <div class="comment-react">
+                        <div class="comment-react-option">
+                            <span class="likes-count">0</span>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+
+                        <div class="comment-react-option">
+                            <span class="dislikes-count">0</span>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="single-comment-container">
-                <div class="comment-container-header">
-                    <span class="username">نجلا وحدانی</span>
-                    <span class="purchaser">خریدار</span>
-                    <span class="date">11 مرداد 1402</span>
-                </div>
-
-                <div class="comment-container-content">
-                    خوب بود، پیشنهاد میکنم.
-                </div>
-                
-                <div class="comment-react">
-                    <div class="comment-react-option">
-                        <span class="likes-count">0</span>
-                        <i class="fa-solid fa-thumbs-up"></i>
+                <div class="single-comment-container">
+                    <div class="comment-container-header">
+                        <span class="username">نجلا وحدانی</span>
+                        <span class="purchaser">خریدار</span>
+                        <span class="date">11 مرداد 1402</span>
                     </div>
 
-                    <div class="comment-react-option">
-                        <span class="dislikes-count">0</span>
-                        <i class="fa-solid fa-thumbs-down"></i>
+                    <div class="comment-container-content">
+                        خوب بود، پیشنهاد میکنم.
+                    </div>
+                    
+                    <div class="comment-react">
+                        <div class="comment-react-option">
+                            <span class="likes-count">0</span>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+
+                        <div class="comment-react-option">
+                            <span class="dislikes-count">0</span>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="single-comment-container">
-                <div class="comment-container-header">
-                    <span class="username">نجلا وحدانی</span>
-                    <span class="purchaser">خریدار</span>
-                    <span class="date">11 مرداد 1402</span>
-                </div>
-    
-                <div class="comment-container-content">
-                    خوب بود، پیشنهاد میکنم.
-                </div>
-                
-                <div class="comment-react">
-                    <div class="comment-react-option">
-                        <span class="likes-count">0</span>
-                        <i class="fa-solid fa-thumbs-up"></i>
+                <div class="single-comment-container">
+                    <div class="comment-container-header">
+                        <span class="username">نجلا وحدانی</span>
+                        <span class="purchaser">خریدار</span>
+                        <span class="date">11 مرداد 1402</span>
                     </div>
 
-                    <div class="comment-react-option">
-                        <span class="dislikes-count">0</span>
-                        <i class="fa-solid fa-thumbs-down"></i>
+                    <div class="comment-container-content">
+                        خوب بود، پیشنهاد میکنم.
+                    </div>
+                    
+                    <div class="comment-react">
+                        <div class="comment-react-option">
+                            <span class="likes-count">0</span>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+
+                        <div class="comment-react-option">
+                            <span class="dislikes-count">0</span>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="single-comment-container">
-                <div class="comment-container-header">
-                    <span class="username">نجلا وحدانی</span>
-                    <span class="purchaser">خریدار</span>
-                    <span class="date">11 مرداد 1402</span>
-                </div>
-    
-                <div class="comment-container-content">
-                    خوب بود، پیشنهاد میکنم.
-                </div>
-                
-                <div class="comment-react">
-                    <div class="comment-react-option">
-                        <span class="likes-count">0</span>
-                        <i class="fa-solid fa-thumbs-up"></i>
+                <div class="single-comment-container">
+                    <div class="comment-container-header">
+                        <span class="username">نجلا وحدانی</span>
+                        <span class="purchaser">خریدار</span>
+                        <span class="date">11 مرداد 1402</span>
                     </div>
-
-                    <div class="comment-react-option">
-                        <span class="dislikes-count">0</span>
-                        <i class="fa-solid fa-thumbs-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            
-            
-    
-        </div>
         
-    </div>
+                    <div class="comment-container-content">
+                        خوب بود، پیشنهاد میکنم.
+                    </div>
+                    
+                    <div class="comment-react">
+                        <div class="comment-react-option">
+                            <span class="likes-count">0</span>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
 
-    
-    </section>
-    <!-- comments section ends -->
+                        <div class="comment-react-option">
+                            <span class="dislikes-count">0</span>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-comment-container">
+                    <div class="comment-container-header">
+                        <span class="username">نجلا وحدانی</span>
+                        <span class="purchaser">خریدار</span>
+                        <span class="date">11 مرداد 1402</span>
+                    </div>
+        
+                    <div class="comment-container-content">
+                        خوب بود، پیشنهاد میکنم.
+                    </div>
+                    
+                    <div class="comment-react">
+                        <div class="comment-react-option">
+                            <span class="likes-count">0</span>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+
+                        <div class="comment-react-option">
+                            <span class="dislikes-count">0</span>
+                            <i class="fa-solid fa-thumbs-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+        
+            </div>
+            
+        
+
+        
+        </section>
+        <!-- comments section ends -->
+    </div>
+    <!-- details and comments container ends -->
 
     <!-- same products section starts -->
     <section class="same-products">

@@ -200,12 +200,24 @@
 /* buy product section ends */
 
 
+/* details comments section */
+.details-comments{
+    display: flex;
+    justify-content: space-around;
+    margin:0 4rem 4rem 4rem;
+    background-color: #eee;
+}
+
+
+
 /* details section starts */
 .details{
     margin: 3rem 4rem 3rem 4rem;
     border: 0.02rem solid #000;
+    border-radius: 5rem;
     padding: 1.5rem;
     width: fit-content;
+    height: fit-content;
 }
 
 .details-header{
@@ -213,6 +225,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: #000;
+    cursor: pointer;
 }
 
 .text-content{
@@ -239,7 +252,10 @@
 .comments{
     margin: 3rem 4rem 3rem 4rem;
     border: 0.02rem solid #000;
+    border-radius: 5rem;
     padding: 1.5rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 .comments-header{
@@ -247,10 +263,17 @@
     font-size: 2rem;
     font-weight: 600;
     color: #000;
+    cursor: pointer;
+}
+
+
+
+.comment-opened{
     border-bottom: 0.02rem dashed var(--light-color);
 }
 
 .add-comment{
+    display: none;
     margin: 2rem;
 }
 
@@ -262,8 +285,12 @@
     flex-wrap: wrap;
 }
 
+.comments-container {
+    display: none;
+}
+
 .single-comment-container{
-    width: 40rem;
+    width: 30rem;
     border: 0.02rem solid rgb(160, 158, 158);
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
