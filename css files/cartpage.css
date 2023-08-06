@@ -44,11 +44,13 @@
 }
 
 .products-list{
+    height: fit-content;
     width:65%;
     background-color: rgb(222, 238, 247);;
 }
 
 .total-price{
+    height: fit-content;
     background-color: rgb(225, 225, 255);
     width: 30%;
 }
@@ -75,6 +77,12 @@ th {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.delete-item-btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
 }
 
 .table-img{
@@ -111,5 +119,43 @@ th {
 /* total price section starts */
 .total-price{
     border: var(--border-hover);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.price-must-paid{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: var(--border-hover);
+}
+
+.price-must-paid-title{
+    font-size: 2rem;
+}
+
+.price-must-paid-value{
+    font-size: 1.5rem;
+}
+
+.container-in-price-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-in-price-section{
+    font-size: 1.5rem;
+}
+
+.value-in-price-section{
+    font-size: 1.3rem;
+    color: #e93232;
 }
 /* total price section ends */
