@@ -400,9 +400,18 @@
 }
 /* comments section ends */
 
+/* unavailable product styles */
+.unavailable{
+    color: red;
+}
 
+.availability-description{
+    text-align: center;
+}
 
-
+.availability-description-text{
+    font-size: 1.5rem;
+}
 
 
 
