@@ -211,3 +211,55 @@ th {
     color: var(--black);
     direction: ltr;
 }
+
+
+
+
+
+
+
+/* information page styles starts */
+.information{
+    margin: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information-title{
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.information-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-span{
+    font-size: 2rem;
+}
+
+.star{
+    color: red;
+}
+
+.get-info{
+    border:var(--border);
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.get-info:hover{
+    border: var(--border-hover);
+}
+
