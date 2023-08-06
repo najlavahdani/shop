@@ -8,12 +8,13 @@
     <title>سبد خرید</title>
 
     <!-- custom css file -->
+    <link rel="stylesheet" href="../css files/cartpage.css">
 
     <!-- common css file -->
     <link rel="stylesheet" href="../css files/covah.css">
 
-        <!--font awesome cdn link-->
-        <script src="https://kit.fontawesome.com/76c05b648a.js" crossorigin="anonymous"></script>
+    <!--font awesome cdn link-->
+    <script src="https://kit.fontawesome.com/76c05b648a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header section starts -->
@@ -70,11 +71,6 @@
                 <i class="fa-solid fa-bars" id="products"></i>
                 <!-- mobile search icon -->
                 <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-                <!-- cart-icon -->
-                <div class="cart-icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-count">4</span>
-                </div>
             </div>
         </div>
         <!-- header-2 section ends -->
@@ -136,6 +132,23 @@
     </section>
     <!-- header section ends -->
 
+    <!-- customise header section starts -->
+    <section class="cartpage-header">
+        <div class="header-text-container">
+            <span class="level-text this-level">سبد خرید</span>
+            <i class="fa-solid fa-arrow-left arrows"></i>
+            <span class="level-text">ورود به حساب کاربری</span>
+            <i class="fa-solid fa-arrow-left arrows"></i>
+            <span class="level-text">وارد کردن مشخصات</span>
+            <i class="fa-solid fa-arrow-left arrows"></i>
+            <span class="level-text">تسویه حساب</span>
+            <i class="fa-solid fa-arrow-left arrows"></i>
+            <span class="level-text">تکمیل سفارش</span>
+        </div>
+    </section>
+    <!-- customise header section ends -->
+    
+
 
     <!-- cart section starts -->
     <section class="cart-section">
@@ -143,75 +156,7 @@
             <div class="cart-content scrollbar">
                 <div class="cart-header">
                     <button id="close-cart">x</button>
-                    <span>سبد خرید</span>
                 </div>
-
-                <div class="cart-items scrollbar">
-                    <div class="cart-product clearfix">
-                        <div class="image">
-                            <a href="#"><img src="image/product.png" alt=""></a>
-                            <span class="delete-mark"><i class="fa-solid fa-trash"></i></span>
-                        </div>
-                        
-                        <div class="info">
-                            <h6><a href="#">چای ساز تفال</a></h6>
-                            <span class="quantity-price">1 x 1,374,000</span>
-                        </div>
-                    </div>
-
-                    <div class="cart-product clearfix">
-                        <div class="image">
-                            <a href="#"><img src="image/product.png" alt=""></a>
-                            <span class="delete-mark"><i class="fa-solid fa-trash"></i></span>
-                        </div>
-                        
-                        <div class="info">
-                            <h6><a href="#">چای ساز تفال</a></h6>
-                            <span class="quantity-price">1 x 1,374,000</span>
-                        </div>
-                    </div>
-
-
-                    <div class="cart-product clearfix">
-                        <div class="image">
-                            <a href="#"><img src="image/product.png" alt=""></a>
-                            <span class="delete-mark"><i class="fa-solid fa-trash"></i></span>
-                        </div>
-                        
-                        <div class="info">
-                            <h6><a href="#">چای ساز تفال</a></h6>
-                            <span class="quantity-price">1 x 1,374,000</span>
-                        </div>
-                    </div>
-
-
-                    <div class="cart-product clearfix">
-                        <div class="image">
-                            <a href="#"><img src="image/product.png" alt=""></a>
-                            <span class="delete-mark"><i class="fa-solid fa-trash"></i></span>
-                        </div>
-                        
-                        <div class="info">
-                            <h6><a href="#">چای ساز تفال</a></h6>
-                            <span class="quantity-price">1 x 1,374,000</span>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div class="cart-footer">
-                    <div class="price">
-                        <h5>قیمت کل: <span>1,374,000</span></h5>
-                    </div>
-
-                    <div class="buttons">
-                        <a href="#" class="btn">نمایش سبد خرید</a>
-                        <a href="#" class="btn">پرداخت</a>
-                    </div>
-
-                    <p>با خیالی راحت از قیمت و کیفیت خرید کنید!</p>
-                </div>
-
             </div>
         </div>
     </section>  
