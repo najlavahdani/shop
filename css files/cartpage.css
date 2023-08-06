@@ -39,6 +39,7 @@
 
 /* main section styles */
 .main{
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-around;
 }
