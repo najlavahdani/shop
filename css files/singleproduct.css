@@ -53,10 +53,9 @@
 
 .another-images{
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    width: 45rem;
+    width: 35rem;
     height: 15rem;
     overflow-x: scroll;
 }
