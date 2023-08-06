@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    overflow-x: scroll;
 }
 
 .another-images img{
@@ -147,7 +148,7 @@
 
 .price-before-disc{
     color: var(--light-color);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: line-through;
 }
@@ -175,3 +176,99 @@
     justify-content: center;
 }
 /* buy product section ends */
+
+
+/* details section starts */
+.details{
+    margin: 3rem 4rem 3rem 4rem;
+    border: 0.02rem solid #000;
+    padding: 1.5rem;
+}
+
+.details-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 0.02rem dashed var(--light-color);
+}
+
+.details-content{
+    padding: 1rem;
+}
+
+.text-content{
+    color: var(--black);
+    font-size: 1.5rem;
+    text-align: right;
+}
+/* details section ends */
+
+
+/* comments section starts */
+.comments{
+    margin: 3rem 4rem 3rem 4rem;
+    border: 0.02rem solid #000;
+    padding: 1.5rem;
+}
+
+.comments-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 0.02rem dashed var(--light-color);
+}
+
+.add-comment{
+    margin: 2rem;
+}
+
+.comments-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.single-comment-container{
+    width: 40rem;
+    border: 0.02rem solid rgb(160, 158, 158);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.comment-container-header{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 0.02rem solid rgb(160, 158, 158);;
+}
+
+.comment-container-content{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.comment-react{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.comment-react-option{
+    
+    cursor: pointer;
+}
+
+.fa-thumbs-down, .dislikes-count{
+    color: red;
+}
+
+.fa-thumbs-up, .likes-count{
+    color: green;
+}
+/* comments section ends */
