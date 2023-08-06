@@ -271,4 +271,74 @@
 .fa-thumbs-up, .likes-count{
     color: green;
 }
+
+/* new comments section starts */
+.add-comment-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0; right: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.add-comment-container.active{
+    display: flex;
+}
+
+.add-comment-header-text{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.add-comment-content{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+#close-comment-btn{
+    position: absolute;
+    top: 10%;
+    right:30%;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+#close-comment-btn:hover{
+    color: var(--green);
+    transform: scale(1.2);
+}
+
+.box{
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+}
+
+.get-data{
+    font-size: 1.5rem;
+    display: block;
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+.sending-comment-btn{
+    text-align: center;
+    width: 100%;
+    margin:1.5rem 0;
+}
 /* comments section ends */

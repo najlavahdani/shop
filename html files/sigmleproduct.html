@@ -45,7 +45,7 @@
                     <img src="image/logo.png" alt="">
                     <h3>ورود/ثبت نام</h3>
                     <span>لطفا شماره موبایل خود را وارد نمایید:</span>
-                    <input type="text" placeholder="0917..." class="box">
+                    <input type="tel" placeholder="0917..." class="box">
                     <input type="submit" class="btn" value="ورود به فروشگاه وحدت هرمزگان">
                 </form>
             </div>
@@ -306,11 +306,30 @@
     <section class="comments">
         <header class="comments-header">نظرات</header>
 
-        <div class="add-comment btn">
-            <span>+</span>
-            <span>در مورد این کالا نظر دهید...</span>
+        <div class="new-comment">
+            <div class="add-comment btn">
+                <span>+</span>
+                <span>در مورد این کالا نظر دهید...</span>
+            </div>
+
+            <div class="add-comment-container">
+                <div class="add-comment-content">
+                    <div class="add-comment-header">
+                        <h1 class="add-comment-header-text">نظر شما درباره ی محصول</h1>
+                        <i id="close-comment-btn" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form>
+                        <span class="get-data">لطفا نام خود را وارد کنید:</span>
+                        <input type="text" placeholder="نجلا وحدانی" class="box">
+
+                        <span class="get-data">متن مورد نظر خود را وارد کنید:</span>
+                        <textarea name="comment" rows="4" cols="50" class="box" placeholder="اینجا بنویسید"></textarea>
+
+                        <input type="submit" class="btn sending-comment-btn" value="ارسال نظر">
+                    </form>
+                </div>
+            </div>
         </div>
-        
 
         <div class="comments-container">
             <div class="single-comment-container">
