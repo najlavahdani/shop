@@ -230,32 +230,68 @@
     </section>
     <!-- bottom navbar section ends -->
 
-    <div class="product">
-        <div class="image">
-           <img src="image/asiyab_prev_ui.png" title="15-inch MacBook Pro" alt="Product image" />
+    <!-- product sction starts -->
+    <section class="product-section">
+        <div class="product-address">
+            <a href="vahdat.html"><span>لوازم خانگی وحدت</span></a>
+            <span>/</span>
+            <a href="products.html"><span>ساندویچ سازها</span></a>
         </div>
-        <div class="description">
-            <div class="product-header">
-                <div class="product-price">
-                    <span class="price-after-cost">3,250,000</span>
-                    <span class="price-before-cost">2,950,000</span>
-                </div>
-                <div class="rating">★★★★☆</div>
+
+        <div class="product">
+            <div class="another-images">
+                <img class="another-image-option" src="image/geepsand1.png" onclick="toggleBorderColor(this)" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
+                <img class="another-image-option" src="image/geepsand1.png" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
+                <img class="another-image-option" src="image/geepsand1.png" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
             </div>
-           <h1>Apple</h1>
-           <h2>15-inch MacBook Pro</h2>
-           <p>2.8GHz quad-core 7th-generation Intel Core i7 processor</p>
-           <p>Turbo Boost up to 3.8GHz</p>
-           <p>16GB 2133MHz LPDDR3 memory</p>
-           <p>256GB SSD storage1</p>
-           <p>Radeon Pro 555 with 2GB memory</p>
-           <p>Four Thunderbolt 3 ports</p>
-           <p>Touch Bar and Touch ID</p>
-           <div class="color active" style="background: #aaaeb1"></div>
-           <div class="color" style="background: #dddfde"></div>
-           <a href="" class="button">Add to card</a>
+            <div class="image">
+                <img src="image/sandwichsaz_prev_ui.png" alt="">            
+            </div>
+            <div class="description">
+                <div class="product-header">
+                    <div class="rating">★★★★☆</div>
+                    <div class="product-price">
+                        <span class="price-after-cost">2,950,000 تومان</span>
+                        <span class="price-before-cost">3,250,000</span>
+                    </div>
+                </div>
+                <h1 class="category-name">ساندویچ ساز</h1>
+                <h2 class="product-name">ساندویچ ساز کوچک جیپاس 6002</h2>
+                <h4 class="title">دسته بندی: <span><a href="#">ساندویچ ساز</a></span></h4>
+                <h4 class="title">برند: <span>چیپاس geepas</span></h4>
+                <h4 class="title">رنگ: <span>مشکی / خاکستری / سفید</span></h4>
+                <h4 class="title">توضیحات: <p>ساندویچ ساز کوچک جیپاس 6002لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p></h4>
+                <div class="color">   
+                    <h4 class="title">انتخاب رنگ:</h4>
+                    <div class="color-items-container">
+                        <span class="white color-items" onclick="toggleBorderColor(this)"></span>
+                        <span class="black color-items" onclick="toggleBorderColor(this)"></span>
+                        <span class="gray color-items" onclick="toggleBorderColor(this)"></span>
+                    </div>
+                </div> 
+                <div class="quantity">
+                    <label for="quantity" class="title">تعداد:</label>
+                    <button class="quantity-button decrease-btn" onclick="decreaseQuantity()">-</button>
+                    <input id="quantity" type="tel" value="1" min="1">
+                    <button class="quantity-button increase-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <a href="" class="btn add-to-cart-btn">اضافه به سبد خرید</a>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- product sction starts -->
+
+    <!-- custom js file link -->
+    <script src="../js files/newproductpage.js"></script>
 
     <!-- common js file link -->
     <script src="../js files/covah.js"></script>
