@@ -26,6 +26,7 @@
 .image{
     display: flex;
     justify-content: center;
+    align-items: center;
     height:75%;
     background: linear-gradient(45deg, #267cbf 5%, #99cf6d 92%);
     width: 45rem;
@@ -36,7 +37,7 @@
 .image img{
     position: relative;
     opacity:1;
-    height: 40rem;
+    height: 30rem;
     filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.4));
 }
 

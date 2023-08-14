@@ -19,14 +19,9 @@ function decreaseQuantity() {
   }
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    var anotherImages = document.querySelectorAll(".another-images img");
-    var mainImage = document.querySelector(".image img");
-  
-    for (var i = 0; i < anotherImages.length; i++) {
-      anotherImages[i].addEventListener("click", function() {
-        var newImageSrc = this.getAttribute("src");
-        mainImage.setAttribute("src", newImageSrc);
-      });
-    }
+  $(document).ready(function() {
+    $(".another-image-option").click(function() {
+      var clickedImageSrc = $(this).attr("src");
+      $(".image img").attr("src", clickedImageSrc);
+    });
   });
