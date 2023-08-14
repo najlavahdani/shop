@@ -28,6 +28,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 ::after, ::before{
     box-sizing: border-box;
 }
@@ -963,7 +965,6 @@ html::-webkit-scrollbar-thumb{
 
 /* contact us section starts */
 .contact{
-    height: 25rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -985,7 +986,6 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5rem;
 }
 
 .contact .contact-ways h6{
@@ -1151,13 +1151,13 @@ html::-webkit-scrollbar-thumb{
 
 
 
-
-
 @media(max-width:991px){
     html{
         font-size: 55%;
     }
 }
+
+
 
 
 @media(max-width:768px){
@@ -1197,6 +1197,7 @@ html::-webkit-scrollbar-thumb{
         display: flex;
     }
 
+
     .icons-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1214,8 +1215,8 @@ html::-webkit-scrollbar-thumb{
     .footer .permissions{
         margin-top: 20rem;
     }
+    
 }
-
 
 
 @media(max-width:450px){
@@ -1246,6 +1247,7 @@ html::-webkit-scrollbar-thumb{
         justify-content: center;
         padding: 2rem 0;
     }
+    
 }
 
 
