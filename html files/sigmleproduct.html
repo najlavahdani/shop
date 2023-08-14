@@ -10,11 +10,15 @@
     <!-- swiper css style link -->
     <link rel="stylesheet" href="../css files/swiper.css">
 
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- common css file -->
     <link rel="stylesheet" href="../css files/covah.css">
 
     <!-- custom css file -->
     <link rel="stylesheet" href="../css files/singleproduct.css">
+    <link rel="stylesheet" href="../css files/vahdatnewproductpage.css">
 
     <!--font awesome cdn link-->
     <script src="https://kit.fontawesome.com/76c05b648a.js" crossorigin="anonymous"></script>
@@ -231,257 +235,187 @@
     </section>
     <!-- bottom navbar section ends -->
 
-    <!-- product section starts -->
-    <section class="product">
+    <!-- product sction starts -->
+    <section class="product-section">
         <div class="product-address">
             <a href="vahdat.html"><span>لوازم خانگی وحدت</span></a>
             <span>/</span>
             <a href="products.html"><span>ساندویچ سازها</span></a>
         </div>
 
-
-        <div class="product-descriptipn-container">
-            <div class="product-images">
-                <div class="main-image">
-                    <img src="image/geepsand.png" alt="">
+        <div class="product">
+            <div class="another-images">
+                <img class="another-image-option" src="image/geepsand1.png" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
+                <img class="another-image-option" src="image/geepsand1.png" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
+                <img class="another-image-option" src="image/geepsand1.png" alt="">
+                <img class="another-image-option" src="image/geepsand2.png" alt="">
+                <img class="another-image-option" src="image/geepsand3.png" alt="">
+                <img class="another-image-option" src="image/geepsand4.png" alt="">
+            </div>
+            <div class="image">
+                <img src="image/sandwichsaz_prev_ui.png" alt="">            
+            </div>
+            
+            <div class="description">
+                <div class="product-header">
+                    <div class="rating">★★★★☆</div>
+                    <div class="product-price">
+                        <span class="price-after-cost">2,950,000 تومان</span>
+                        <span class="price-before-cost">3,250,000</span>
+                    </div>
                 </div>
-
-                <!-- another images section -->
-                <div class="another-images">
-                    <img class="another-image-option" src="image/geepsand1.png" alt="">
-                    <img class="another-image-option" src="image/geepsand2.png" alt="">
-                    <img class="another-image-option" src="image/geepsand3.png" alt="">
-                    <img class="another-image-option" src="image/geepsand4.png" alt="">
-                    <img class="another-image-option" src="image/geepsand1.png" alt="">
-                    <img class="another-image-option" src="image/geepsand2.png" alt="">
-                    <img class="another-image-option" src="image/geepsand3.png" alt="">
-                    <img class="another-image-option" src="image/geepsand4.png" alt="">
-                    <img class="another-image-option" src="image/geepsand1.png" alt="">
-                    <img class="another-image-option" src="image/geepsand2.png" alt="">
-                    <img class="another-image-option" src="image/geepsand3.png" alt="">
-                    <img class="another-image-option" src="image/geepsand4.png" alt="">
+                <h1 class="category-name">ساندویچ ساز</h1>
+                <h2 class="product-name">ساندویچ ساز کوچک جیپاس 6002</h2>
+                <h4 class="title">دسته بندی: <span><a href="#">ساندویچ ساز</a></span></h4>
+                <h4 class="title">برند: <span>چیپاس geepas</span></h4>
+                <h4 class="title">رنگ: <span>مشکی / خاکستری / سفید</span></h4>
+                <h4 class="title">توضیحات: <p>ساندویچ ساز کوچک جیپاس 6002لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p></h4>
+                <div class="color">   
+                    <h4 class="title">انتخاب رنگ:</h4>
+                    <div class="color-items-container">
+                        <span class="white color-items" onclick="toggleBorderColor(this)"></span>
+                        <span class="black color-items" onclick="toggleBorderColor(this)"></span>
+                        <span class="gray color-items" onclick="toggleBorderColor(this)"></span>
+                    </div>
+                </div> 
+                <div class="quantity">
+                    <label for="quantity" class="title">تعداد:</label>
+                    <button class="quantity-button decrease-btn" onclick="decreaseQuantity()">-</button>
+                    <input id="quantity" type="tel" value="1" min="1">
+                    <button class="quantity-button increase-btn" onclick="increaseQuantity()">+</button>
                 </div>
-                
+                <a href="" class="btn add-to-cart-btn">اضافه به سبد خرید</a>
+            </div>
+        </div>
+    </section>
+    <!-- product sction starts -->
+
+    <!-- comments section starts -->
+    <section class="comments">
+        <div class="comments-container">
+            <div class="comments-header">
+                <i class="fa-solid fa-message"></i>
+                <h1 class="comments-title">نظرات</h1>
             </div>
 
-            <div class="product-description">
-                <h1 class="product-full-name">ساندویچ ساز کوچک جیپاس 6001</h1>
-                <div class="description-items">
-                    <div class="item">
-                        <span>دسته بندی:</span>
-                        <a class="linked-value" href="products.html"><span class="value">ساندویچ ساز</span></a>
+            <div class="Posted-comments">
+                <h1 class="name">نجلا وحدانی</h1>
+                <p class="message">این یک پیام تست است</p>
+                <div class="message-rating">
+                    <div class="reaction">
+                        <span class="like-counter">0</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
                     </div>
 
-                    <div class="item">
-                        <span>برند:</span>
-                        <span class="value">جیپاس geepas</span>
-                    </div>
-
-                    <div class="item">
-                        <span>رنگ:</span>
-                        <span class="value">مشکی</span>
+                    <div class="reaction">
+                        <span class="dislike-counter">0</span>
+                        <i class="fa-solid fa-thumbs-down"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="buy-product">
-                <div class="availability">
-                    <span>موجود در انبار</span>
-                </div>
-
-                <div class="price">
-                    <div class="last-price">
-                        <span class="discount-percent">10%</span>
-                        <span class="price-before-disc">1,340,000</span>
+            <div class="Posted-comments">
+                <h1 class="name">نجلا وحدانی</h1>
+                <p class="message">این یک پیام تست است</p>
+                <div class="message-rating">
+                    <div class="reaction">
+                        <span class="like-counter">0</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
                     </div>
 
-                    <div class="new-price">
-                        <span class="price-after-disc">1,200,000 تومان</span>
+                    <div class="reaction">
+                        <span class="dislike-counter">0</span>
+                        <i class="fa-solid fa-thumbs-down"></i>
                     </div>
                 </div>
+            </div>
 
-                <div class="add-to-cart">
-                    <a href="#" class="btn">افزودن به سبد خرید</a>
+            <div class="Posted-comments">
+                <h1 class="name">نجلا وحدانی</h1>
+                <p class="message">این یک پیام تست است</p>
+                <div class="message-rating">
+                    <div class="reaction">
+                        <span class="like-counter">0</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+
+                    <div class="reaction">
+                        <span class="dislike-counter">0</span>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Posted-comments">
+                <h1 class="name">نجلا وحدانی</h1>
+                <p class="message">این یک پیام تست است</p>
+                <div class="message-rating">
+                    <div class="reaction">
+                        <span class="like-counter">0</span>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+
+                    <div class="reaction">
+                        <span class="dislike-counter">0</span>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="leave-comment">
+                <h1 class="leave-comment-title">شما هم در مورد این کالا نظر دهید..</h1>
+                <div class="comments-inputs">
+                    <input class="input-option" type="text" placeholder="نام خود را وارد کنید">
+                    <textarea class="input-option" name="comment" rows="1" cols="50" class="box" placeholder="نظر خود را اینجا بنویسید"></textarea>
+                    <input type="submit" class="comments-btn" value="تایید">
                 </div>
             </div>
         </div>
     </section>
-    <!-- product section ends -->
-
-    <!-- details and comments container starts -->
-    <div class="details-comments">
-        <!-- details section starts -->
-        <section class="details">
-            <header class="details-header" onclick="toggleText()">توضیحات</header>
-
-            <div class="details-content">
-                <p class="text-content">با اتو بخار مسافرتی Geepas بدون استرس بمانید و از تجربه اتوی صاف و یکنواخت لذت ببرید. جعبه اتوی 800 واتی که به تازگی طراحی شده است، دارای اتوی مرطوب و خشک است و به شما کمک می کند تا در حین انجام کار، به راحتی چروک ها و چروک های روی لباس های خود را از بین ببرید. جعبه آهنی پر جنب و جوش سفید و آبی دارای خروجی بخار مداوم برای ارائه بهترین نتایج است. فوران قدرتمند بخار، لباس های شما را چروک و شفاف نگه می دارد و ظاهری تازه و جدید به آن ها می بخشد. دستگیره ارگونومیک عملکرد ایمن و پایدار را بدون گرم شدن بیش از حد تضمین می کند و کارآمدترین نتایج را به همراه دارد. جعبه آهنی مجهز به محافظ در برابر گرمای بیش از حد است که به شما کمک می کند تا از انواع پارچه ها بدون سوختن محافظت کنید و زندگی شما را آسان تر کند. علاوه بر این، جعبه آهنی مجهز به نشانگر قدرت است تا شما را از دما مطلع کند و از سوختن انگشتان شما جلوگیری کند. دارای کفی باکیفیت است که به راحتی روی لباس می چرخد ​​و بهترین نتیجه را ایجاد می کند. طراحی سبک، جمع و جور و قابل حمل با یک دسته تاشو حمل آن را آسان می کند و می توان آن را جابه جا کرد. اتو بخار مسافرتی Geepas دارای 2 سال گارانتی می باشد. ابعاد این محصول 20.9x10.2x10.3 سانتی متر و وزن آن 0.2 کیلوگرم است.</p>
+    <!-- comments section ends -->
+    
+    <!-- icons section starts -->
+    <section class="icons-container">
+        <div class="icon">
+            <i class="fa-solid fa-plane"></i>
+            <div class="content">
+                <h3>ارسال مطمئن</h3>
+                <p>بهترین بسته بندی و ارسال</p>
             </div>
-        </section>
-        <!-- details section ends -->
+        </div>
 
-        <!-- comments section starts -->
-        <section class="comments">
-            <header class="comments-header" onclick="toggleComments()">نظرات</header>
-
-            <div class="new-comment">
-                <div class="add-comment btn">
-                    <span>+</span>
-                    <span>در مورد این کالا نظر دهید...</span>
-                </div>
-
-                <div class="add-comment-container">
-                    <div class="add-comment-content">
-                        <div class="add-comment-header">
-                            <h1 class="add-comment-header-text">نظر شما درباره ی محصول</h1>
-                            <i id="close-comment-btn" class="fa-solid fa-xmark"></i>
-                        </div>
-                        <form>
-                            <span class="get-data">لطفا نام خود را وارد کنید:</span>
-                            <input type="text" placeholder="نجلا وحدانی" class="box">
-
-                            <span class="get-data">متن مورد نظر خود را وارد کنید:</span>
-                            <textarea name="comment" rows="4" cols="50" class="box" placeholder="اینجا بنویسید"></textarea>
-
-                            <input type="submit" class="btn sending-comment-btn" value="ارسال نظر">
-                        </form>
-                    </div>
-                </div>
+        <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+            <div class="content">
+                <h3>پرداخت امن</h3>
+                <p>درگاه پرداخت کاملا مطمئن</p>
             </div>
+        </div>
 
-            <div class="comments-container">
-                <div class="single-comment-container">
-                    <div class="comment-container-header">
-                        <span class="username">نجلا وحدانی</span>
-                        <span class="purchaser">خریدار</span>
-                        <span class="date">11 مرداد 1402</span>
-                    </div>
-
-                    <div class="comment-container-content">
-                        خوب بود، پیشنهاد میکنم.
-                    </div>
-                    
-                    <div class="comment-react">
-                        <div class="comment-react-option">
-                            <span class="likes-count">0</span>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-
-                        <div class="comment-react-option">
-                            <span class="dislikes-count">0</span>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-comment-container">
-                    <div class="comment-container-header">
-                        <span class="username">نجلا وحدانی</span>
-                        <span class="purchaser">خریدار</span>
-                        <span class="date">11 مرداد 1402</span>
-                    </div>
-
-                    <div class="comment-container-content">
-                        خوب بود، پیشنهاد میکنم.
-                    </div>
-                    
-                    <div class="comment-react">
-                        <div class="comment-react-option">
-                            <span class="likes-count">0</span>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-
-                        <div class="comment-react-option">
-                            <span class="dislikes-count">0</span>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-comment-container">
-                    <div class="comment-container-header">
-                        <span class="username">نجلا وحدانی</span>
-                        <span class="purchaser">خریدار</span>
-                        <span class="date">11 مرداد 1402</span>
-                    </div>
-
-                    <div class="comment-container-content">
-                        خوب بود، پیشنهاد میکنم.
-                    </div>
-                    
-                    <div class="comment-react">
-                        <div class="comment-react-option">
-                            <span class="likes-count">0</span>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-
-                        <div class="comment-react-option">
-                            <span class="dislikes-count">0</span>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-comment-container">
-                    <div class="comment-container-header">
-                        <span class="username">نجلا وحدانی</span>
-                        <span class="purchaser">خریدار</span>
-                        <span class="date">11 مرداد 1402</span>
-                    </div>
-        
-                    <div class="comment-container-content">
-                        خوب بود، پیشنهاد میکنم.
-                    </div>
-                    
-                    <div class="comment-react">
-                        <div class="comment-react-option">
-                            <span class="likes-count">0</span>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-
-                        <div class="comment-react-option">
-                            <span class="dislikes-count">0</span>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="single-comment-container">
-                    <div class="comment-container-header">
-                        <span class="username">نجلا وحدانی</span>
-                        <span class="purchaser">خریدار</span>
-                        <span class="date">11 مرداد 1402</span>
-                    </div>
-        
-                    <div class="comment-container-content">
-                        خوب بود، پیشنهاد میکنم.
-                    </div>
-                    
-                    <div class="comment-react">
-                        <div class="comment-react-option">
-                            <span class="likes-count">0</span>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-
-                        <div class="comment-react-option">
-                            <span class="dislikes-count">0</span>
-                            <i class="fa-solid fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                
-                
-        
+        <div class="icon">
+            <i class="fa-solid fa-headset"></i>
+            <div class="content">
+                <h3>پشتبانی 24 ساعته</h3>
+                <p>پاسخگویی 24 ساعته به شما</p>
             </div>
-            
-        
+        </div>
 
-        
-        </section>
-        <!-- comments section ends -->
-    </div>
-    <!-- details and comments container ends -->
+        <div class="icon">
+            <i class="fa-solid fa-plus"></i>
+            <div class="content">
+                <h3>ضمانت اصالت کالا</h3>
+                <p>اطمینان از کیفیت و اصالت کالا</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icons section ends -->
 
     <!-- same products section starts -->
     <section class="same-products">
@@ -721,43 +655,6 @@
         </div>
     </section>
     <!-- same products section ends -->
-    
-    <!-- icons section starts -->
-    <section class="icons-container">
-        <div class="icon">
-            <i class="fa-solid fa-plane"></i>
-            <div class="content">
-                <h3>ارسال مطمئن</h3>
-                <p>بهترین بسته بندی و ارسال</p>
-            </div>
-        </div>
-
-        <div class="icon">
-            <i class="fa-solid fa-lock"></i>
-            <div class="content">
-                <h3>پرداخت امن</h3>
-                <p>درگاه پرداخت کاملا مطمئن</p>
-            </div>
-        </div>
-
-        <div class="icon">
-            <i class="fa-solid fa-headset"></i>
-            <div class="content">
-                <h3>پشتبانی 24 ساعته</h3>
-                <p>پاسخگویی 24 ساعته به شما</p>
-            </div>
-        </div>
-
-        <div class="icon">
-            <i class="fa-solid fa-plus"></i>
-            <div class="content">
-                <h3>ضمانت اصالت کالا</h3>
-                <p>اطمینان از کیفیت و اصالت کالا</p>
-            </div>
-        </div>
-
-    </section>
-    <!-- icons section ends -->
 
     <!-- contact us section starts  -->
     <section id="contact">
@@ -828,6 +725,7 @@
 
     <!-- custom js file link -->
     <script src="../js files/singleproduct.js"></script>
+    <script src="../js files/newproductpage.js"></script>
 
     <!-- common js file link -->
     <script src="../js files/covah.js"></script>
