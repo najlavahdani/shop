@@ -330,3 +330,13 @@
 .comments-btn:hover{
     background-color: var(--green);
 }
+
+
+
+/* unavailable products styles */
+.unavailable-product{
+    color: red;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
