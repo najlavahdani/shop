@@ -1,14 +1,4 @@
-:root{
-    --dark-color: rgb(25, 55, 109);
-    --green: rgb(87, 107, 189);
-    --black:#444;
-    --light-color:#666;
-    --border:0.1rem solid rgba(0,0,0,0.1);
-    --border-hover:0.1rem solid var(--black);
-    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
-}
-
-/* cart page custom styles section starts */
+/* cart page custom header styles section starts */
 .header-text-container{
     height: 10rem;
     display: flex;
@@ -35,91 +25,131 @@
 .this-level{
     border-bottom: 0.2rem solid var(--green);;
 }
-/* cart page custom styles section ends */
+/* cart page custom header styles section ends */
 
-/* main section styles */
 .main{
-    margin-bottom: 3rem;
     display: flex;
     justify-content: space-around;
+    align-items: start;
 }
 
 .products-list{
-    height: fit-content;
-    width:65%;
-    background-color: rgb(222, 238, 247);;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 40rem;
+    overflow-y: scroll;
+    padding: 5rem;
 }
 
-.total-price{
-    height: fit-content;
-    background-color: rgb(225, 225, 255);
-    width: 30%;
+.products-list::-webkit-scrollbar {
+    width: 12px; 
 }
 
+.products-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
 
-/* products list in cart section starts */
-table {
+.products-list::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 6px; 
+}
+
+.products-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+.product-item{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: -1px 3px 45px 2px rgba(0, 0, 0, 0.26);
+}
+
+.product-item img{
+    width: 12rem;
+}
+
+.description{
     width: 100%;
-    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 4rem;
 }
-  
-th, td {
-    border: 0.1rem solid var(--black);
-    padding: 0.8rem;
+
+.item-description{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-name{
+    font-size: 2.5rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
-  
-th {
-    background-color: #f2f2f2;
-    font-size: 1.7rem;
+
+.price-after-cost{
+    font-size: 2rem;
+    color: var(--black);
 }
 
-.product-info{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.delete-item-btn{
+.price-before-cost{
     font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.quantity-title{
+    font-size: 2rem;
+    color: var(--black);
+    padding-left: 0.5rem;
+}
+
+.quantity-button{
+    font-size: 2rem;
+    background-color: #fff;
+    color: var(--black);
     cursor: pointer;
+}
+
+#quantity{
+    width:2rem;
+    text-align: center;
+}
+
+.decrease-btn:hover{
     color: red;
 }
 
-.table-img{
-    width: 5rem;
-    height: 5rem;
+.increase-btn:hover{
+    color: green;
 }
 
-.text-in-table{
-    font-size: 1.5rem;
-}
-
-.products-number{
-    padding: 0 1rem 0 1rem;
-}
-
-.decrease{
-    padding: 0 0.5rem 0 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.increase{
-    padding: 0 0.5rem 0 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.decrease:hover , .increase:hover{
-    color: #802424;
+.fa-trash-can{
     font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
 }
-/* products list in cart section ends */
+
+.fa-trash-can:hover{
+    color: red;
+}
+
 
 /* total price section starts */
 .total-price{
-    border: var(--border-hover);
+    box-shadow: -1px 3px 45px 2px rgba(0, 0, 0, 0.26);
+    border-radius: 2rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
