@@ -390,7 +390,17 @@
     .header-text-container{
         gap: 1rem;
     }
+        
+    .information-title{
+        font-size: 2.2rem;
+    }
 
+    .login-page-title{
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width:450px){
     .level-text{
         font-size: 1.2rem;
     }
@@ -398,12 +408,4 @@
     .arrows{
         font-size: 1rem;
     }
-        
-    .information-title{
-        font-size: 2.2rem;
-    }
-}
-
-@media(max-width:450px){
-
 }

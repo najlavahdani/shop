@@ -116,3 +116,20 @@ window.onscroll = () => {
 }
 //search section ends
 
+
+
+
+//fixing the third header
+$(document).ready(function() {
+    var header = $('.header-3');
+    var headerOffset = header.offset().top;
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > headerOffset) {
+            header.addClass('fixed-header');
+        } else {
+            header.removeClass('fixed-header');
+        }
+    });
+});
+

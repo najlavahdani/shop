@@ -606,6 +606,14 @@ html::-webkit-scrollbar-thumb{
     z-index: 1000;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
 
 .bot-nav .bottom-navbar{
     font-size: 2rem;
