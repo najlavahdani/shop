@@ -254,46 +254,51 @@
 
 /* information page styles starts */
 .information{
-    margin: 4rem 0 4rem 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
+    margin: 3rem 0 3rem 0;
 }
 
-.information-title{
-    font-size: 3.5rem;
-    color: var(--black);
-}
-
-.information-form{
+.information-container{
+    box-shadow: -1px 3px 45px 2px rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: fit-content;
+    width: 40rem;
 }
 
-.info-item{
+.information-title{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.information-option{
     display: flex;
     flex-direction: column;
-
 }
 
-.label-span{
-    font-size: 2rem;
+.information-input{
+    border: var(--border);
+    padding: 0.5rem;
+}
+
+.information-input:hover{
+    border: var(--border-hover);
+}
+
+.information-option label{
+    font-size: 1.5rem;
 }
 
 .star{
     color: red;
 }
 
-.get-info{
-    border:var(--border);
-    width: 100%;
-    height: 4rem;
-    padding: 1rem;
+.submition-information{
+    text-align: center;
 }
-
-.get-info:hover{
-    border: var(--border-hover);
-}
-
