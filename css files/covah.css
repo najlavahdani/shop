@@ -934,6 +934,7 @@ html::-webkit-scrollbar-thumb{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
     gap: 1.5rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .icons-container .icon{
@@ -962,7 +963,7 @@ html::-webkit-scrollbar-thumb{
 
 /* contact us section starts */
 .contact{
-    height: 35rem;
+    height: 25rem;
     text-align: center;
     margin-bottom: 2rem;
 }
