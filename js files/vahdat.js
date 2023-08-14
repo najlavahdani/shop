@@ -10,6 +10,24 @@ document.querySelector('#close-login-btn').onclick = () => {
 //login form ends
 
 
+//verifying form starts
+let verifyingForm = document.querySelector('.verifying')
+document.querySelector('.submit-number').onclick = () => {
+    verifyingForm.classList.toggle('active');
+}
+
+document.querySelector('#close-verifying-btn').onclick = () => {
+    verifyingForm.classList.remove('active');
+}
+//verifying form ends
+
+
+// resending code starts
+document.querySelector('.resend').onclick = () => {
+  verifyingForm.classList.remove('active');
+}
+// resending code ends
+
 //search section starts
 let searchForm = document.querySelector('.search-form')
 document.querySelector('#search-btn').onclick = () =>{
