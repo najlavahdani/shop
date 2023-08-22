@@ -398,6 +398,61 @@
     .login-page-title{
         font-size: 2.2rem;
     }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .products-list{
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .product-item{
+        width: 100%;
+    }
+
+    .product-item img{
+        width: 8rem;
+    }
+
+    .description{
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .product-name{
+        font-size: 2rem;
+    }
+
+    .total-price{
+        width: 80%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .price-must-paid-title{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .price-must-paid-value{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .title-in-price-section{
+        font-size: 2rem;
+    }
+
+    .value-in-price-section{
+        font-size: 2rem;
+    }
+
 }
 
 @media(max-width:450px){

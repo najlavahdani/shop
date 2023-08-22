@@ -149,6 +149,35 @@
     font-weight: 300;
 }
 
+.caption{
+    height: 8rem;
+    margin-bottom: 1.5rem;
+    overflow-y: scroll;
+}
+
+/* caption webkit scrollbar customize */
+.caption::-webkit-scrollbar {
+    direction: ltr;
+    height: 0.3rem; 
+    width: 0.3rem;
+}
+  
+.caption::-webkit-scrollbar-thumb {
+    background-color: var(--dark-color); 
+    border-radius: 0.4rem; 
+}
+  
+.caption::-webkit-scrollbar-thumb:hover {
+    background-color: var(--green);
+}
+  
+.caption::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 0.4rem;
+}
+
+
+
 .color{
     display: flex;
     gap: 1.5rem;
@@ -345,6 +374,8 @@
     width: 100%;
     text-align: center;
 }
+
+
 
 
 
