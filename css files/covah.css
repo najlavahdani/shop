@@ -1127,9 +1127,9 @@ html::-webkit-scrollbar-thumb{
 
 /* footer section starts */
 .footer{
-    border-top: 1rem solid var(--dark-color);
+    border-top: 1rem solid var(--light-color);
     padding: 2rem;
-    background: rgb(176, 181, 176);
+    background: rgb(48, 48, 48);
 }
 
 .footer .footer-content{
@@ -1146,16 +1146,17 @@ html::-webkit-scrollbar-thumb{
 
 .footer-content .footer-content-title{
     display: inline-block;
+    color: #fff;
     font-size: 2rem;
     padding-right: 0.5rem;
     margin-bottom: 1rem;
-    border-right: 0.3rem solid var(--green);
-    border-bottom: 0.1rem dashed var(--green);
+    border-right: 0.3rem solid var(--light-color);
+    border-bottom: 0.1rem dashed var(--light-color);
 }
 
 .footer-content .data{
     font-size: 1.5rem;
-    color: var(--black);
+    color: #ffffff;
     text-align: right;
     line-height: 3rem;
     
@@ -1176,7 +1177,7 @@ html::-webkit-scrollbar-thumb{
 .footer-content a{
     width: fit-content;
     display: inline;
-    color: var(--black);
+    color: #ffffff;
 }
 
 .footer-content .data a:hover{
@@ -1199,9 +1200,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 .footer .permissions h2{
-    border-bottom: 0.3rem solid var(--green);
+    border-bottom: 0.3rem solid var(--light-color);
     text-align: center;
-    color: var(--black);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 400;
 }
