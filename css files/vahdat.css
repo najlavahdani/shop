@@ -1467,16 +1467,6 @@ html::-webkit-scrollbar-thumb{
     gap: 2rem;
 }
 
-.footer .permissions img{
-    width: 5%;
-    max-height: 20%;
-    margin: 2rem;
-    cursor: pointer;
-}
-
-.footer .permissions img:hover{
-    transform: scale(0.9);
-}
 
 
 
