@@ -347,12 +347,14 @@
 .summary-info{
     margin: 2rem 0 2rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 
 .inpo-partition{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .info-title{
