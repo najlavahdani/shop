@@ -527,19 +527,19 @@ html::-webkit-scrollbar-thumb{
     content: "";
 }
 
-.cart-section .cart .cart-content .cart-items .cart-product .image{
+.cart-section .cart .cart-content .cart-items .cart-product .cart-image{
     float: right;
     width: 80px;
     margin-left: 15px;
     position: relative;
 }
 
-.cart-section .cart .cart-content .cart-items .cart-product .image img{
+.cart-section .cart .cart-content .cart-items .cart-product .cart-image img{
     width: 8rem;
     height: 8rem;
 }
 
-.cart-section .cart .cart-content .cart-items .cart-product .image .delete-mark{
+.cart-section .cart .cart-content .cart-items .cart-product .cart-image .delete-mark{
     position: absolute;
     right: -8px;
     top: -8px;
@@ -1094,16 +1094,15 @@ html::-webkit-scrollbar-thumb{
 .contact .contact-ways .fa-phone{
     color: rgb(22, 101, 22);
 }
+
 .contact .contact-ways .fa-phone::before{
     font-size: 2.5rem;
 }
 
-
-
 .contact .contact-ways .fa-envelope{
     color: rgb(227, 209, 15);
-    
 }
+
 .contact .contact-ways .fa-envelope::before{
     font-size: 2.5rem;
 }
